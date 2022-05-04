@@ -1,0 +1,170 @@
+@import "./../styles/variables.scss";
+
+.navbar {
+  background: rgb(252, 250, 250);
+  width: 100%;
+  height: $headerHeight;
+  padding: 0 1.5rem;
+  border-radius: 1px;
+
+  @include breakpoint(md) {
+    padding: 0 3rem;
+  }
+
+  transition: 0.3s ease all;
+
+  .navlinks {
+    overflow: hidden;
+    color: $light;
+    margin: 0 auto;
+    max-width: 2400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+
+    div.logo {
+      position: relative;
+      bottom: 14px;
+      left: 20px;
+      top: 2px;
+    
+      img {
+        width: 220px;
+    
+      }
+    }
+
+    .nav {
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: rgba(white, 0.7);
+      backdrop-filter: blur(2px);
+      transform: translate(0);
+      transition: 0.3s ease transform;
+
+      @include breakpoint(md) {
+        transform: none;
+        flex-direction: row;
+        background: transparent;
+        width: auto;
+        height: 100%;
+        position: static;
+        color: black;
+      }
+
+      ul {
+        color:black;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $spacing-lg;
+
+        @include breakpoint(md) {
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 0;
+          margin-right: calc(0.5rem + #{$spacing-md});
+          color: black;
+        }
+
+        li {
+          &:not(:last-child) {
+            margin-bottom: $spacing-lg;
+
+            @include breakpoint(md) {
+              margin-bottom: 0;
+              margin-right: $spacing-md;
+            }
+          }
+
+          a {
+            text-decoration: none;
+            color: black;
+            padding-left: 23px;
+            border-radius: $borderRadius;
+            transition: 0.3s ease all;
+            position: relative;
+            right: 20px;
+
+            &:hover {
+              background: rgba($dark, 0.1);
+              padding: 0.8rem 0.8rem;
+            }
+
+            &:active {
+              
+              border-radius: calc(#{$borderRadius} + 6px);
+              background: linear-gradient(rgba($light, 0.1), rgba($light, 0.2));
+            }
+          }
+        }
+      }
+
+      button {
+        position: relative;
+        padding-left: 16px;
+        right: 17px;
+        background: none;
+        color: inherit;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        
+        
+       
+        border-radius: $borderRadius;
+        transition: 0.3s ease all;
+        
+        &:hover {
+          padding: 0.8rem 0.8rem;
+          background: rgba($dark, 0.1);
+        }
+        
+        &:active {
+          
+          border-radius: calc(#{$borderRadius} + 6px);
+          background: linear-gradient(rgba($light, 0.1), rgba($light, 0.2));
+        }
+      
+      }
+
+      &.isMenu {
+        transform: translate(100%);
+      }
+    }
+
+    .toggle {
+      color: black;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      transition: 0.3s ease all;
+      position: relative;
+
+      &:hover {
+        color: $primary;
+      }
+
+      @include breakpoint(md) {
+        display: none;
+      }
+    }
+  }
+}
+
+
+

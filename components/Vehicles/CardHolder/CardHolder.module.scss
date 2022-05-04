@@ -1,0 +1,234 @@
+div.cardholder {
+  display: flex;
+  align-items: space;
+  margin-left: 13px;
+  margin-top: 21px;
+  
+
+  div.cardcontainer {
+    margin: 20px;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    box-shadow:3px 5px  30px 5px;
+    transition: 0.3s;
+    animation: ease-in-out; 
+
+    &:hover {
+      transform: scale(1.06);
+      box-shadow: 0px Opx 15px Opx;
+    }
+
+    div.imagecontainer img {
+      overflow: hidden;
+      height: 380px;
+      width: 100%;
+    }
+
+    div.cardcontent {
+      margin: 1rem;
+      margin-top: 0.5rem;
+
+      i {
+        font-size: 14px;
+        position: relative;
+        top: 1.5px;
+        color: rgb(73, 173, 212);
+      }
+
+      div.cardtitle {
+        margin-bottom: 1rem;
+        border: 1px solid rgb(73, 173, 212);
+        color: rgb(25, 107, 139);;
+        padding: 0px 30px;
+        display: inline-block;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        padding-top:5px;
+        padding-bottom:8px;
+
+        h3 {
+          margin: 0;
+          padding: 0;
+        } 
+      }
+      
+      p{
+        margin: 0;
+        padding: 0;
+      }
+
+      a.btn_container {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgb(73, 173, 212);
+        padding: 0px 0px;
+        display: inline-block;
+        position: relative;
+        left: 128px;
+        top: 90px;
+        background-color: rgb(223, 228, 230);
+
+        button {
+          padding-top: 18px;
+          padding-bottom: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          background-color: white;
+          border: none;
+          transition: 0.2s;
+          margin-bottom: 0.5rem;
+          border-radius: 3px; 
+          background-color: rgb(223, 228, 230);
+        }
+ 
+          &:hover {
+          background: Orgba(27, 156, 252, 0.1);
+        }
+ 
+        a {
+           text-transform: uppercase;
+           color: #1B9CFC;
+           text-decoration: none;
+           font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 850px) {
+  div.cardholder {
+  
+  
+    div.cardcontainer {
+      margin: 20px;
+      width: 300px;
+      max-height: 700px;
+      height: 100%;
+      overflow: hidden;
+      box-shadow: 3px 5px 30px 5px;
+      transition: 0.3s;
+      animation: ease-in-out;
+  
+      &:hover {
+        transform: scale(1.06);
+        box-shadow: 0px Opx 15px Opx;
+      }
+  
+      div.imagecontainer img {
+        overflow: hidden;
+        max-height: 380px;
+        height: 50%;
+        width: 100%;
+      }
+  
+      div.cardcontent {
+        margin: 1rem;
+        margin-top: 0.5rem;
+  
+        i {
+          font-size: 10px;
+          position: relative;
+          top: 0px;
+          color: rgb(73, 173, 212);
+        }
+  
+        div.cardtitle {
+          margin-bottom: 1rem;
+          border: 1px solid rgb(73, 173, 212);
+          color: rgb(25, 107, 139);
+          ;
+          padding: 0px 10px;
+          display: inline-block;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          padding-top: 5px;
+          padding-bottom: 8px;
+  
+          h3 {
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+          }
+        }
+  
+        p {
+          font-size: 10px;
+          margin: 0;
+          padding: 0;
+        }
+  
+        a.btn_container {
+          display: flex;
+          justify-content: center;
+          border: 1px solid rgb(73, 173, 212);
+          padding: 0px 0px;
+          display: inline-block;
+          position: relative;
+          left: 1px;
+          top: 40px;
+          background-color: rgb(223, 228, 230);
+          border-right:1px solid rgb(73, 173, 212) 20px;
+          border-top: 1px solid rgb(73, 173, 212);
+          border-bottom: 1px solid rgb(73, 173, 212);
+          height: 45px;
+          
+  
+          button {
+            padding-top: 8px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: white;
+            border: none;
+            transition: 0.2s;
+            margin-bottom: 0.5rem;
+            border-radius: 3px;
+            background-color: rgb(223, 228, 230);
+          }
+  
+          &:hover {
+            background: Orgba(27, 156, 252, 0.1);
+          }
+  
+          a {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #1B9CFC;
+            text-decoration: none;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }}
+
+  @media only screen and (max-width: 1930px) and (min-width: 1300px) {
+
+    div.cardholder {
+    
+    
+      div.cardcontainer {
+        margin: 20px;
+        width: 300px;
+        max-height: 500px;
+        width: 350px;
+        overflow: hidden;
+        box-shadow: 3px 5px 30px 5px;
+        transition: 0.3s;
+        animation: ease-in-out;
+    
+        &:hover {
+          transform: scale(1.06);
+          box-shadow: 0px Opx 15px Opx;
+        }
+    
+        div.imagecontainer img {
+          overflow: hidden;
+          height: 380px;
+          height: 100%;
+          
+        }
+      }
+      }
+      }

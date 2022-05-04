@@ -1,0 +1,74 @@
+div.page {
+  
+
+  div.holder{
+    display: flex;
+    height: 103.05vh;
+    margin-top: 100px;
+
+
+    div.map{
+      margin-left: 20px;
+      margin-top: 40px;
+      border: 2px solid black;
+    }
+  }
+
+
+
+  div.data{
+    width: 45%;
+    display: grid ;
+    grid-template-columns: 1fr 1fr ;
+    
+  }
+
+  div.choose {
+
+    h1 {
+      font-weight: 600;
+      border-radius: 10px;
+      display: inline-block;
+      text-decoration: none;
+      color: black;
+      border: 3px solid black;
+      padding: 12px 40px;
+      font-size: 32px;
+      background: transparent;
+      position: relative;
+      cursor: pointer;
+      margin-left: 38.5%;
+      margin-top:  30px;
+      margin-bottom: 40px;
+    }
+  }
+
+div.cruisepage {
+  min-height: 65vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 17, 19, 0.5), rgba(4, 9, 30, 0.3)), url('/skiathos-port-2.jpg');
+  background-position: 10% 90%;
+  background-size: cover;
+  position: relative;
+  font-family: Gabriola;
+  opacity: 100%;
+
+
+
+
+  h1{
+    font-size: 100px;
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 200px;
+  }
+  h2{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 180px;
+  }
+}
+}

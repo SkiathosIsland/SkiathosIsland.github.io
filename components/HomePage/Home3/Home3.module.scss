@@ -1,0 +1,263 @@
+// div.wrapper{
+//   position: relative;
+//   z-index: -1;
+
+
+//   iframe{
+//     position: absolute;
+//     z-index: -1;
+//     top:0;
+//     bottom: 0;
+//     height: 100%;
+//   }
+
+
+
+
+div.Services {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color:rgba(255, 243, 243, 0.60) ;
+  border-radius: 30px;
+  margin-left: 17.5%;
+  margin-right: 18%;
+  z-index: 1;
+
+
+  p{
+    padding: 28px;
+  }
+  h2.Cruises{
+    z-index: 1;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: left;
+    color: black;
+    position: relative;
+    left: 13.35%;
+    bottom: 12px;
+    color:inherit;
+    text-decoration: none;
+    a {
+      color: black;
+    }
+    
+    a:hover {
+      color: grey;
+    }
+    i {
+      padding-top: 10px;
+      position: relative;
+      top: 45px;
+      right: 54px;
+    }
+
+    
+  }
+  h2.Vehicles {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: black;
+    position: relative;
+    left: 47.6%;
+    bottom: 50px;
+    color:inherit;
+    text-decoration: none;
+    width: 20px;
+    a {
+      color: black;
+    }
+    
+    a:hover {
+      color: grey;
+    }
+    i {
+      padding-top: 10px;
+      position: relative;
+      left: 43px;
+    }
+    
+    
+    
+    
+    
+    
+
+  }
+  h2.Restaurants {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    left: 80%;
+    bottom: 94px;
+    color:inherit;
+    text-decoration: none;
+    width: 20px;
+    
+    a {
+      color: black;
+    }
+    
+    a:hover {
+      color: grey;
+    }
+    i {
+      padding-top: 10px;
+      position: relative;
+      left: 63px;
+    }
+    
+    
+    
+  }
+  
+
+  h1 {
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 12px 62px;
+    font-size: 32px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  div.flex_cont {
+    display: flex;
+
+    .Servicescol {
+      flex-basis: 32%;
+      border-radius: 10px;
+      margin: 10px;
+      margin-bottom: 30px;
+      margin-left: 20px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      
+      
+    
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    a.image {
+      width: 100%;
+      height: 30vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .layer {
+      background: transparent;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.5s;
+      
+      &:hover {
+        background: rgba(226, 0, 0, 0.7);
+
+        h3 {
+          bottom: 49%;
+          opacity: 1;
+        }
+      }
+      
+      h3 {
+        width: 100%;
+        font-weight: 500;
+        color: #fff;
+        font-size: 26px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      
+    }
+  }
+    
+    
+  }
+
+}
+// }
+
+@media only screen and (max-width: 1000px) {
+
+  div.Services {
+    width: 98%;
+    background-color:rgb(255, 255, 255) ;
+    margin-left: 0%;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 00px;
+  p{
+    margin-left: 9px;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-weight: 200;
+    border: 1px solid black;
+    font-size: 18px;
+    margin-left: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+  }
+  h2.Cruises {
+    
+    opacity: 0;
+  }
+  
+  h2.Vehicles {
+    
+    opacity: 0;
+  
+  }
+  
+  h2.Restaurants {
+    
+    opacity: 0;
+  }
+
+  div.flex_cont {
+    display: flex;
+    flex-direction: column;
+
+    .Servicescol {
+      
+      
+      h2 {
+        text-align: center;
+        font-size: 22px;
+      }
+      
+   
+    
+    
+  
+
+
+
+
+ } }}}
+
